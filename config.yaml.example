@@ -1,0 +1,13 @@
+AK: <Qiniu AccessKey>
+SK: <Qiniu SecretKey>
+keyFilePath: <private key file path>
+crtFilePath: <certificate file path>
+crtName: <certificate name (easy to see in list)>
+crtCommonName: <common name in certificate file>
+cdnDomains:
+  - name: <cdn domain 1>
+    forceHttps: true
+    http2Enable: true
+  - name: <cdn domain 2>
+    forceHttps: true
+    http2Enable: true
