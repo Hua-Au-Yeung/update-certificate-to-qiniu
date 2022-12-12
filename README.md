@@ -1,7 +1,7 @@
 ## 说明
 本脚本实现的功能：
 1. 自动把证书文件上传到qiniu服务器  
-**注意：** qiniu服务器仅支持pem格式证书，如果是其他格式请自行转换
+**注意:** qiniu服务器仅支持pem格式证书，如果是其他格式请自行转换
 2. 更新证书到1到多个cdn域名上
 
 ## 运行环境
@@ -14,7 +14,8 @@
 - PyYAML
 
 ### 配置文件格式
-参考`config.yaml.example`文件
+参考`config.yaml.example`文件  
+**注意:** 如果牵涉到泛域名，请用单引号包裹字符串
 
 ## 安装
 1. 首先安装`virtualenv`，  
@@ -38,8 +39,9 @@ source "<absolute_path_recommended_here>/venv/bin/activate"
 python "<absolute_path_recommended_here>/main.py"
 deactivate
 ```
-注意：首先要安装依赖模块
+**注意:** 首先要安装依赖模块
 
 ## 引用
 - [qiniu cdn api](https://developer.qiniu.com/fusion/4243/access-to-the)
 - [qiniu python sdk](https://github.com/qiniu/python-sdk)
+- [acme.sh](https://github.com/acmesh-official/acme.sh)
