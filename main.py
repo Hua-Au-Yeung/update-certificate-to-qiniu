@@ -1,12 +1,13 @@
 #!/usr/bin/env python3
 # https://developer.qiniu.com/fusion/8593/interface-related-certificate
 
+import os
 import json
 import requests
 import yaml
 from qiniu import Auth
 
-with open('config.yaml', 'r') as f:
+with open(os.path.dirname(os.path.abspath(__file__)) + '/config.yaml', 'r') as f:
     configYamlString = f.read()
 config = yaml.safe_load(configYamlString)
 
